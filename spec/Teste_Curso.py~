@@ -15,8 +15,8 @@ class Teste_Curso(unittest.TestCase):
 	
 	def teste_definir_nome(self, nome):
 		um_curso = Curso('Soldador','N', 222)
-		um_curso.definir_nome('Técnico em Informática')
-		um_curso.nome |should| equal_to('Técnico em Informática')
+		um_curso.definir_nome('Tecnico em Informatica')
+		um_curso.nome |should| equal_to('Tecnico em Informatica')
 		
 	def teste_definir_turno(self, turno):
 		um_curso = Curso('Soldador','N', 222)

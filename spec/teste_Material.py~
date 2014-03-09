@@ -1,7 +1,7 @@
 import unittest
 from should_dsl import should
 from Material import Material
-from Aluno import Aluno
+from Alunos import Alunos
 
 class Teste_Aluno(unittest.TestCase):
 	def setUp(self):

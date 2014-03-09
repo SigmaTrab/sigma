@@ -2,11 +2,15 @@ class Material:
 	materiais = {}
 
 	def __init__(self, nome, disciplina):
-  		self.nome = nome
-  		self.disciplina = disciplina
-
-	def Formatar_material(self, material, disciplina, bolsista):
-		self.material = material
+		self.nome = nome
 		self.disciplina = disciplina
-		self.bolsista = bolsista
+
+	def definir_nome(self, nome):
+		self.nome = nome
+	
+	def definir_disciplina(self, disciplina):
+		self.disciplina = disciplina
+		
+	def alocar_bolsista(self, bolsista):
+		self.bolsista = bolsista	
 
