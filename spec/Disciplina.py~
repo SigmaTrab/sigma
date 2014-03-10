@@ -20,12 +20,10 @@ class Disciplina:
 		
 	def retornar_material(self, n):
 		return self.materiais[n]
-	
-'''	
+		
 uma_disciplina = Disciplina("Biologia")
 um_material = Material("Livro", "Lorem ipsum", "Ricardo")
 uma_disciplina.incluir_material(um_material)
 t = sys.stdout
 uma_disciplina.listar_materiais()	
 print(t)
-'''

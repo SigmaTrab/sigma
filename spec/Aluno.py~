@@ -1,5 +1,5 @@
 class Aluno:
-	alunos = []
+	alunos = {}
 
 	def __init__(self, nome, endereco, matricula):
 		self.nome = nome

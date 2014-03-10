@@ -4,7 +4,7 @@ from Aluno import Aluno
 
 class Teste_Aluno(unittest.TestCase):
 	def setUp(self):
-		Aluno.alunos = []
+		Aluno.alunos = {}
 
 	def test_criar_aluno(self):
 		um_aluno = Aluno("Joao", "Rua das Coves", 1)
