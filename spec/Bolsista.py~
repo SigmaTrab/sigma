@@ -1,6 +1,5 @@
 from Aluno import Aluno
 from Curso import Curso
-from Material import Material
 
 class Bolsista(Aluno):
 	def __init__(self, Aluno):

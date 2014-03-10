@@ -2,6 +2,7 @@ import unittest
 from should_dsl import should
 from Curso import Curso
 from Aluno import Aluno
+from Disciplina import Disciplina
 
 class Teste_Curso(unittest.TestCase):
 	def setUp(self):
@@ -27,12 +28,19 @@ class Teste_Curso(unittest.TestCase):
 		um_curso = Curso('Soldador','N', 222)
 		um_curso.definir_codigo(333)
 		um_curso.codigo |should| equal_to(333)
-'''
-	def teste_incluir_disciplina(self, disciplina):
-		self.disciplinas.append(disciplina)
+
+	def teste_incluir_disciplina(self):
+		um_curso = Curso('Soldador','N', 222)
+		uma_disciplina = Disciplina("Biologia")
+		um_curso.incluir_disciplina(uma_disciplina)
+		um_curso.disciplinas[0] |should| equal_to(uma_disciplina)
 		
-	def teste_matricular(self, aluno):
-		self.alunos.append(aluno)
-'''
+	
+	def teste_matricular(self):
+		um_curso = Curso('Soldador','N', 222)
+		um_aluno = Aluno("Joao", "Rua das Coves", 1)
+		um_curso.matricular(um_aluno)
+		um_curso.alunos[0] |should| equal_to(um_aluno)
+
 if __name__ == "__main__":
 	unittest.main()

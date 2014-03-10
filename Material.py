@@ -1,7 +1,7 @@
 class Material:
-	materiais = {}
+	materiais = []
 
-	def __init__(self, nome, conteudo):
+	def __init__(self, nome, conteudo, bolsista):
 		self.nome = nome
 		self.conteudo = conteudo
 		self.bolsista_responsavel = bolsista
