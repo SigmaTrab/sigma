@@ -16,7 +16,11 @@ class Teste_Disciplina(unittest.TestCase):
 		uma_disciplina.alterar_nome("Quimica")
 		uma_disciplina.nome |should| equal_to("Quimica")
 	
+<<<<<<< HEAD
 	def teste_incluir_material_e_retornar_material_disciplina(self):
+=======
+	def teste_incluir_material_disciplina(self):
+>>>>>>> 5da33106efb7b6b014c27d8b2d39b8c15e838dbc
 		uma_disciplina = Disciplina("Biologia")
 		um_material = Material("Livro", "Lorem ipsum", "Ricardo")
 		uma_disciplina.incluir_material(um_material)
