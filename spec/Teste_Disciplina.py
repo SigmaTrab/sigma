@@ -21,16 +21,6 @@ class Teste_Disciplina(unittest.TestCase):
 		um_material = Material("Livro", "Lorem ipsum", "Ricardo")
 		uma_disciplina.incluir_material(um_material)
 		uma_disciplina.retornar_material(0) |should| equal_to(um_material)
-<<<<<<< HEAD
-
-=======
-	'''
-	def teste_alterar_matricula_aluno(self):
-		um_aluno = Aluno("Joao", "Rua das Coves", 1)
-		um_aluno.alterar_matricula(2)
-		um_aluno.matricula |should| equal_to(2)
-	'''
->>>>>>> 5da33106efb7b6b014c27d8b2d39b8c15e838dbc
 
 if __name__ == "__main__":
 	unittest.main()
